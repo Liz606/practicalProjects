@@ -16,6 +16,14 @@
     img{
         height: 100px;
     }
+    .container-multi{
+        width: 100%;
+        height: 500px;
+        background-color: skyblue;
+        font-size: 84px;
+        display: table-cell;
+        vertical-align: middle;
+    }
     </style>
 </head>
 <body>
@@ -28,7 +36,12 @@
         父元素会作为一个表格单元格显示<br/>
         可以设置其子元素的垂直对齐方式<mark>vertical-align:middle;</mark>
         <br/><br>
-        但是，<mark>父元素宽高必须固定</mark>，不能使用百分比
+        注：<mark>父元素宽高必须固定</mark>，不能使用百分比
+        <br><br>
+        还可以用于<mark>多行文字居中</mark>
     </p>
+    <div class="container-multi">
+            多行文字居中啊。多行文字居中啊。多行文字居中啊。多行文字居中啊。
+    </div>
 </body>
 </html>

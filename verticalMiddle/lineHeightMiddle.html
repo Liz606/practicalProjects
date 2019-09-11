@@ -11,20 +11,17 @@
         height: 500px;
         line-height: 500px;
         background-color: skyblue;
-    }
-    img{
-        height: 200px;
+        font-size: 84px;
     }
     </style>
 </head>
 <body>
     <div class="container">
-        <img src="../assets/pic.png" alt="">
+        单行文字居中
     </div>
     <p>
-        利用绝对定位垂直居中，<br/>
-        子元素top:50%;参照的是父元素的高度<br/>
-        translateY(-50%);参照的是自身高度。
+        父元素line-height与height相等即可，<br>
+        仅适用于<mark>单行文字</mark>居中。
     </p>
 </body>
 </html>
