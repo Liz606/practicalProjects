@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .container{
+        width: 100vw;
+        height: 50vh;
+        background-color: skyblue;
+        display: table-cell;
+        vertical-align: middle;
+    }
+    img{
+        height: 100px;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="../assets/pic.png" alt="">
+        <img src="../assets/pic.png" alt="">
+    </div>
+    <p>
+        把父元素display设置为<mark>table-cell,</mark><br/>
+        父元素会作为一个表格单元格显示<br/>
+        可以设置其子元素的垂直对齐方式<mark>vertical-align:middle;</mark>
+        <br/><br>
+        但是，<mark>父元素宽高必须固定</mark>，不能使用百分比
+    </p>
+</body>
+</html>

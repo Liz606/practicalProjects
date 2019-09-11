@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    body{
+        width: 100vw;
+        height: 50vh;
+    }
+    .container{
+        width: 100%;
+        height: 100%;
+        background-color: skyblue;
+        display: flex;
+        align-items: center;/*  垂直居中 */
+        /* justify-content: center; 水平居中*/
+    }
+    img{
+        height: 200px;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="../assets/pic.png" alt="">
+        <img src="../assets/pic.png" alt="">
+    </div>
+    <p>
+        把父元素display设置为<mark>flex</mark>,<br/>
+        可以设置其子元素的垂直对齐方式<mark>align-items: center;</mark>
+    </p>
+</body>
+</html>

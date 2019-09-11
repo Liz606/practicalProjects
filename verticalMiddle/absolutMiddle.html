@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    body{
+        width: 100vw;
+        height: 50vh;
+    }
+    .container{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        background-color: skyblue;
+    }
+    img{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 200px;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="../assets/pic.png" alt="">
+    </div>
+    <p>
+        利用<mark>绝对定位</mark>垂直居中，<br/>
+        子元素<mark>top:50%;</mark>参照的是父元素的高度<br/>
+        <mark>translateY(-50%);</mark>参照的是自身高度。
+        <br><br>
+        注：<mark>仅使用于单独的子元素垂直居中</mark>
+    </p>
+</body>
+</html>

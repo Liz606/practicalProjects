@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    body{
+        width: 100vw;
+        height: 50vh;
+    }
+    .container{
+        width: 100%;
+        height: 100%;
+        background-color: skyblue;
+    }
+    .container:after{
+        content:"";
+        display: inline-block;
+        height: 100%;
+        width: 0;
+        vertical-align: middle;
+    }
+    .img2{
+        width: 200px;
+        vertical-align: middle;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="img2" src="../assets/img.jpg" alt="">
+        <img class="img2" src="../assets/img.jpg" alt="">
+    </div>
+    <p>
+        设置伪元素。vertical-align属性定义行内元素的基线相对于该元素所在行的基线的垂直对齐。<br/>
+        打个比方：有两个<mark>行内元素</mark>a和b，a和b都是img，<br/>
+        如果a加了<mark>vertical-align:middle</mark>样式，<br/>
+        b的<mark>底部（基线）</mark>就会对齐a的中间位置；
+        <br/><br/>
+        如果a和b<mark>都</mark>加了一个vertical-align:middle样式。<br/>
+        那么就<mark>互相对齐了对方的中间位置</mark><br/>
+        也就是它们在垂直方向上的中线对齐了。 
+        <br/><br/>
+        而<mark>伪元素的display属性默认值为inline</mark>，<br/>
+        行内元素是无法设置宽高的，<br/>
+        想要设置宽高需要将之设置为block或者inline-block。
+    </p>
+</body>
+</html>
